@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Modern travel transfer website with multi-language support.">
+  <title>Tripello</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white">
+    <header class="sticky top-0 bg-white shadow z-50">
+        <nav class="container mx-auto flex justify-between items-center py-4 px-4">
+          <a href="index.html" class="flex items-center space-x-2">
+            <img src="images/logo.png" alt="Tripello Logo" style="height:34px;width:auto;display:inline-block;vertical-align:middle;">
+            <span style="font-family:'Poppins', 'Open Sans', Arial, sans-serif;font-size:1.5rem;font-weight:700;color:#222;vertical-align:middle;">Tripello</span>
+          </a>
+          <ul class="flex space-x-6" id="nav-menu">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="transfers.html" class="nav-link">Transfers</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
+          <div class="flex items-center space-x-2">
+            <button id="lang-tr" style="font-family:'Poppins', 'Open Sans', Arial, sans-serif;font-size:1rem;font-weight:600;color:#222;background:transparent;border:none;padding:0 8px;cursor:pointer;">TR</button>
+            <span style="color:#222;font-size:1rem;">|</span>
+            <button id="lang-en" style="font-family:'Poppins', 'Open Sans', Arial, sans-serif;font-size:1rem;font-weight:600;color:#222;background:transparent;border:none;padding:0 8px;cursor:pointer;">EN</button>
+          </div>
+        </nav>
+      </header>
+  <main>
+    <!-- Hero Section -->
+    <section class="hero bg-blue-50 py-16 text-center" style="background-image: url('images/hero.png'); background-size: cover; background-position: center;">
+      <h1 class="text-4xl md:text-6xl font-bold mb-4" id="hero-title">Welcome to Tripello Travel</h1>
+      <p class="text-lg md:text-2xl mb-8" id="hero-desc">Your journey starts here. Book your transfer now!</p>
+      <a href="contact.html" class="bg-blue-600 text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-blue-700 transition" id="hero-cta">Book Now</a>
+    </section>
+    <!-- Features Section -->
+    <section class="features grid grid-cols-1 md:grid-cols-4 gap-6 max-w-5xl mx-auto py-12 px-4">
+      <div class="feature-box bg-white shadow rounded-lg p-6 text-center">
+        <img src="images/wifi.jpg" alt="Free Wi-Fi" class="mx-auto mb-4" style="width:90px;height:90px;object-fit:cover;border-radius:0.7rem;box-shadow:0 2px 8px rgba(0,0,0,0.10);background:#fff;">
+        <h3 class="font-bold text-xl mb-2" id="feature1-title" style="color:#222;">Free Wi-Fi</h3>
+        <p id="feature1-desc" style="color:#222;font-size:1rem;">Stay connected during your ride.</p>
+      </div>
+      <div class="feature-box bg-white shadow rounded-lg p-6 text-center">
+        <img src="images/airplane.jpg" alt="Flight Tracking" class="mx-auto mb-4" style="width:90px;height:90px;object-fit:cover;border-radius:0.7rem;box-shadow:0 2px 8px rgba(0,0,0,0.10);background:#fff;">
+        <h3 class="font-bold text-xl mb-2" id="feature2-title" style="color:#222;">Flight Tracking</h3>
+        <p id="feature2-desc" style="color:#222;font-size:1rem;">We monitor your flight for timely pickup.</p>
+      </div>
+      <div class="feature-box bg-white shadow rounded-lg p-6 text-center">
+        <img src="images/baby seat.jpg" alt="Baby Seat" class="mx-auto mb-4" style="width:90px;height:90px;object-fit:cover;border-radius:0.7rem;box-shadow:0 2px 8px rgba(0,0,0,0.10);background:#fff;">
+        <h3 class="font-bold text-xl mb-2" id="feature3-title" style="color:#222;">Baby Seat</h3>
+        <p id="feature3-desc" style="color:#222;font-size:1rem;">Safe and comfortable for your child.</p>
+      </div>
+      <div class="feature-box bg-white shadow rounded-lg p-6 text-center">
+        <img src="images/driver.jpg" alt="Professional Drivers" class="mx-auto mb-4" style="width:90px;height:90px;object-fit:cover;border-radius:0.7rem;box-shadow:0 2px 8px rgba(0,0,0,0.10);background:#fff;">
+        <h3 class="font-bold text-xl mb-2" id="feature4-title" style="color:#222;">Professional Drivers</h3>
+        <p id="feature4-desc" style="color:#222;font-size:1rem;">Experienced and friendly staff.</p>
+      </div>
+    </section>
+  </main>
+  <footer class="footer-section" style="background:#1e2330; color:#e5e7eb; padding:3rem 0 1.5rem 0; margin-top:3rem;">
+    <div style="max-width:1200px; margin:0 auto; display:flex; flex-wrap:wrap; gap:2.5rem; justify-content:space-between; align-items:flex-start; padding:0 2rem;">
+      <div style="flex:1 1 300px; min-width:220px;">
+        <h3 style="font-size:1.2rem; font-weight:700; margin-bottom:1.2rem; color:#fff;">ABOUT TRIPELLO</h3>
+        <p style="color:#e5e7eb; font-size:1rem; line-height:1.7;">
+          Tripello, with over 15 years of experience, is a high potential tourism agency providing V.I.P Airport Transfers, Private Tours, Car Rental and Accommodation services. With 100% customer advice, book our most reliable and affordable services your holidays in Turkey.
+        </p>
+      </div>
+      <div style="flex:1 1 260px; min-width:200px;">
+        <h3 style="font-size:1.2rem; font-weight:700; margin-bottom:1.2rem; color:#fff;">Need help?</h3>
+        <p style="color:#e5e7eb; font-size:1rem; margin-bottom:0.7rem;">Contact us via phone or email:</p>
+        <div style="display:flex; align-items:center; gap:0.7rem; margin-bottom:0.4rem;">
+          <span style="font-size:1.2rem;">📞</span>
+          <span style="color:#e5e7eb; font-size:1rem;">+90 555 000 00 00</span>
+        </div>
+        <div style="display:flex; align-items:center; gap:0.7rem;">
+          <span style="font-size:1.2rem;">✉️</span>
+          <span style="color:#e5e7eb; font-size:1rem;">info@tripellotravel.com</span>
+        </div>
+      </div>
+      <div style="flex:1 1 180px; min-width:160px;">
+        <h3 style="font-size:1.2rem; font-weight:700; margin-bottom:1.2rem; color:#fff;">Follow us</h3>
+        <div style="display:flex; flex-direction:column; gap:0.7rem; align-items:flex-start;">
+          <a href="#" style="display:flex; align-items:center; gap:0.7rem; color:#e5e7eb; text-decoration:none;" target="_blank" aria-label="Facebook">
+            <img src="images/facebook.png" alt="Facebook" style="width:22px;height:22px;object-fit:contain;background:transparent;display:block;">
+            <span>Facebook</span>
+          </a>
+          <a href="#" style="display:flex; align-items:center; gap:0.7rem; color:#e5e7eb; text-decoration:none;" target="_blank" aria-label="Instagram">
+            <img src="images/instagram.png" alt="Instagram" style="width:22px;height:22px;object-fit:contain;background:transparent;display:block;">
+            <span>Instagram</span>
+          </a>
+          <a href="https://wa.me/1234567890" style="display:flex; align-items:center; gap:0.7rem; color:#e5e7eb; text-decoration:none;" target="_blank" aria-label="WhatsApp">
+            <img src="images/whatsapp.png" alt="WhatsApp" style="width:22px;height:22px;object-fit:contain;background:transparent;display:block;">
+            <span>WhatsApp</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div style="text-align:center; color:#8b94a7; font-size:1rem; margin-top:2.5rem;">© 2025 tripellotravel.com All rights reserved.</div>
+  </footer>
+  <a href="https://wa.me/1234567890" class="fixed bottom-6 right-6 bg-green-500 rounded-full shadow-lg z-50 whatsapp-btn flex items-center justify-center" style="width:56px;height:56px;overflow:hidden;" target="_blank" aria-label="WhatsApp">
+    <img src="images/whatsapp2.png" alt="WhatsApp" style="width:64px;height:64px;object-fit:contain;background:transparent;display:block;">
+  </a>
+  <script src="js/main.js"></script>
+</body>
+</html> 
